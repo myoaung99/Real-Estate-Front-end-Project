@@ -11962,6 +11962,12 @@ fieldset:disabled .btn {
   border-bottom: 2px solid #31353b;
 }
 
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 #header-section {
   background-image: url("./../image/header-bg.png");
   background-repeat: no-repeat;
@@ -11997,6 +12003,18 @@ fieldset:disabled .btn {
 }
 
 .header-img img {
-  width: 600px;
+  width: 500px;
+}
+
+.header__brands {
+  position: absolute;
+  bottom: 2rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.header__brands img {
+  padding-right: 3rem;
 }
 /*# sourceMappingURL=style.css.map */

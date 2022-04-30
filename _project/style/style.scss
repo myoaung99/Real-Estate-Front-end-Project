@@ -25,6 +25,12 @@ $font-family-sans-serif: "Radio Canada", sans-serif;
   border-bottom: 2px solid $text-secondary;
 }
 
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 #header-section {
   background-image: url("./../image/header-bg.png");
   background-repeat: no-repeat;
@@ -41,6 +47,15 @@ $font-family-sans-serif: "Radio Canada", sans-serif;
   height: 100%;
 
   img {
-    width: 600px;
+    width: 500px;
+  }
+}
+
+.header__brands {
+  position: absolute;
+  bottom: 2rem;
+  width: max-content;
+  img {
+    padding-right: 3rem;
   }
 }
