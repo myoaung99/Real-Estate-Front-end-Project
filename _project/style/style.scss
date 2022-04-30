@@ -1,0 +1,46 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;600&display=swap");
+
+// Custom Bootstrap Variables
+
+$primary: #f85a47;
+$secondary: #31353b;
+$text-primary: #000000;
+$text-secondary: #31353b;
+$brand-logo: #718087;
+
+$font-family-sans-serif: "Radio Canada", sans-serif;
+
+// Import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Vertical & Horizontial Alignment
+@mixin flexCenter($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+}
+
+.active {
+  border-bottom: 2px solid $text-secondary;
+}
+
+#header-section {
+  background-image: url("./../image/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-text {
+  height: 100%;
+  @include flexCenter(column);
+}
+
+.header-img {
+  @include flexCenter(column);
+  height: 100%;
+
+  img {
+    width: 600px;
+  }
+}
