@@ -11958,6 +11958,21 @@ fieldset:disabled .btn {
   }
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
 .active {
   border-bottom: 2px solid #31353b;
 }
@@ -12016,5 +12031,31 @@ fieldset:disabled .btn {
 
 .header__brands img {
   padding-right: 3rem;
+}
+
+.social-v {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50px;
+  height: 250px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-v a {
+  color: #000000 !important;
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */

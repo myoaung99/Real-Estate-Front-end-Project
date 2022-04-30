@@ -21,6 +21,20 @@ $font-family-sans-serif: "Radio Canada", sans-serif;
   justify-content: center;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
 .active {
   border-bottom: 2px solid $text-secondary;
 }
@@ -59,5 +73,22 @@ $font-family-sans-serif: "Radio Canada", sans-serif;
   width: fit-content;
   img {
     padding-right: 3rem;
+  }
+}
+
+.social-v {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 250px;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    color: $text-primary !important;
+    margin-bottom: 10px;
   }
 }
