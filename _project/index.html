@@ -67,7 +67,7 @@
     </header>
 
     <section class="container-fluid" id="header-section">
-      <div class="container py-5">
+      <div class="container mb-5 ">
         <!-- hero -->
         <div class="row min-vh-100 flex-column-reverse flex-lg-row">
           <div class="col-12 col-md-6 position-relative">
@@ -75,7 +75,7 @@
               <span class="text-primary fw-bold py-3"
                 >RESIDENTIAL & OFFICE SPACES</span
               >
-              <h1 class="display-4 w-75">
+              <h1 class="display-4  fw-bold">
                 Smart Living Style for Smart People
               </h1>
               <p class="text-secondary w-75 py-3">
@@ -95,7 +95,7 @@
             </div>
 
             <div class="header__brands d-none d-md-block">
-              <p>Our Amazing Partners</p>
+              <p class="fw-light ">Our Amazing Partners</p>
               <div class="">
                 <img src="./image/logo/buzz-log.svg" alt="" />
                 <img src="./image/logo/chase-logo.svg" alt="" />
@@ -137,9 +137,9 @@
     </section>
 
     <section id="about" class="container-fluid">
-      <div class="p-5">
-        <div class="container p-5  text-center">
-        <h1 class="mb-5">How it works?</h1>
+      <div class="py-5">
+        <div class="container text-center">
+        <h4 class="mb-2 h1 fw-bold">How it works?</h4>
         <div class="row justify-content-around py-5 ">
           <div class="col-12 col-md-6 col-lg-4">
             <div class="mb-5 mb-lg-0">
@@ -172,7 +172,291 @@
       
     </section>
 
-    <!-- <script src="./js/jquery.js"></script> -->
+    <section id="service" class="container-fluid ">
+      <div class="container min-vh-100">
+        <div class="row ">
+          <div class="col-12 ">
+            <div class="d-flex justify-content-between align-items-start">
+            <div class="">
+              <h4 class="fw-bold h1">Best Real Estate Deals</h4>
+              <p class="w-75 text-secondary">Colonel gravity get thought fat smiling add but. Wonder twenty hunted and put income set desire expect.</p>
+            </div>
+            <button class="btn btn-primary btn-lg text-white">View All Property</button>
+          </div>
+
+          <ul class="nav bs-tab py-4" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="bs-tab-link me-5 py-1 px-3 active border-0 bg-white"
+                id="residential-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#residential"
+                type="button"
+                role="tab"
+                aria-controls="residential"
+                aria-selected="true"
+              >
+              Residential Property
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="bs-tab-link me-5 py-1 px-3 border-0 bg-white"
+                id="commercial-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#commercial"
+                type="button"
+                role="tab"
+                aria-controls="commercial"
+                aria-selected="false"
+              >
+              Commercial Property
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="bs-tab-link me-5 py-1 px-3  border-0 bg-white"
+                id="agriculture-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#agriculture"
+                type="button"
+                role="tab"
+                aria-controls="agriculture"
+                aria-selected="false"
+              >
+              Agriculture Property
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="bs-tab-link me-5 py-1 px-3  border-0 bg-white"
+                id="industrial-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#industrial"
+                type="button"
+                role="tab"
+                aria-controls="industrial"
+                aria-selected="false"
+              >
+              Industrial Property
+              </button>
+            </li>
+          </ul>
+    
+          <div class="tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="residential"
+              role="tabpanel"
+              aria-labelledby="residential-tab"
+            >
+              <div class="py-3 d-flex img-container justify-content-evenly">
+                <div class="position-relative pe-4">
+                  <div class="service__small-span">
+                    <span class="me-1">Features</span>
+                    <span>3D</span>
+                  </div>
+                  <img class=" img-fluid" src="./image/service-img-1.png" alt="" /></div>
+    
+                <div class="position-relative pe-4"><div class="service__small-span">
+                  <span class="me-1">Features</span>
+                  <span>3D</span>
+                </div><img class="img-fluid " src="./image/service-img-1.png" alt="" /></div>
+    
+                <div class="position-relative"><div class="service__small-span">
+                  <span class="me-1">Features</span>
+                  <span>3D</span>
+                </div><img class="img-fluid " src="./image/service-img-3.png" alt="" /></div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="commercial"
+              role="tabpanel"
+              aria-labelledby="commercial-tab"
+            >
+              ...
+            </div>
+            <div
+            class="tab-pane fade"
+            id="agriculture"
+            role="tabpanel"
+            aria-labelledby="agriculture-tab"
+          >
+            ...
+          </div>
+          <div
+          class="tab-pane fade"
+          id="industrial"
+          role="tabpanel"
+          aria-labelledby="industrial-tab"
+        >
+          ...
+        </div>
+          </div>
+         
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section id="portfoli" class="container-fluid "> 
+       <h4 class="text-center h1 fw-bold my-5 ">Featured Listing of the Week</h4>
+      <div class="container p-4 min-vh-100">
+      
+        <div class="row align-items-end py-5">
+          <div class="col-12 col-md-6">
+            <div class="">
+              <img class="img-fluid" src="./image/portfoli-img.png" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="">
+              <h4 class="h2">The Building where you can live!</h4>
+              <p class="mt-4 mb-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa asperiores eaque voluptate corrupti nobis, ullam a impedit cumque officia ipsum, quod corporis amet sapiente commodi aperiam explicabo ea beatae quibusdam.</p>
+
+              <table class="table table-borderless portfoli-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Budget</th>
+                    <th scope="col">Size</th>
+                    <th scope="col">Type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row">Confidential</td>
+                    <td>1200</td>
+                    <td>Office</td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+
+              <table class="table table-borderless portfoli-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Status</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Flat</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row">Done</td>
+                    <td>Switzerland</td>
+                    <td>8 rooms</td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+              <div class="d-grid pt-3">
+                <button class="btn btn-primary text-capitalize blck text-white">Yes! I Want To book "office package"</button>
+           
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="bio" class="container-fluid ">
+      <div class="container min-vh-100">
+        <h4 class="fs-2 w-50 mt-5 pt-5 mb-4">Loved by businesses, and individuals across the globe</h4>
+        <div class="row justify-content-around">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="">
+              <div class="card" > 
+                <div class="card-body">
+                  <h5 class="card-title">⭐⭐⭐⭐⭐</h5>
+                  <p class="card-text my-4">Moderate children at of outweigh it. Unsatiable it considered invitation he travelling insensible. Consulted admitting oh mr up as described.</p>
+                  <div class="d-flex pt-3">
+                    <div class="me-3">
+                      <img src="./image/bio-img-1.png" alt="">
+                    </div>
+                    <div class="">
+                      <span class="fw-bold d-block">Jane Cooper</span>
+                      <span class="fw-light">Los Angeles, CA</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4"> <div class="">
+            <div class="card" > 
+              <div class="card-body">
+                <h5 class="card-title">⭐⭐⭐⭐⭐</h5>
+                <p class="card-text my-4">The and collecting motionless difficulty son. His hearing staying ten colonel met. Sex drew six easy four dear cold</p>
+                <div class="d-flex pt-3">
+                  <div class="me-3">
+                    <img src="./image/bio-img-2.png" alt="">
+                  </div>
+                  <div class="">
+                    <span class="fw-bold d-block">Robert Fox</span>
+                    <span class="fw-light">New York City</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div></div>
+          <div class="col-12 col-md-6 col-lg-4"> <div class="">
+            <div class="card" > 
+              <div class="card-body">
+                <h5 class="card-title">⭐⭐⭐⭐⭐</h5>
+                <p class="card-text my-4">Sociable on as carriage my position weddings raillery consider. Peculiar trifling absolute and wandered vicinity property yet.</p>
+                <div class="d-flex pt-3">
+                  <div class="me-3">
+                    <img src="./image/bio-img-3.png" alt="">
+                  </div>
+                  <div class="">
+                    <span class="fw-bold d-block">Leslie Alexander</span>
+                    <span class="fw-light">Buffalo, NJ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="d-flex justify-content-between mt-5 pt-5">
+          <img src="./image/logo/buzz-log.svg" alt="" />
+          <img src="./image/logo/chase-logo.svg" alt="" />
+          <img src="./image/logo/microsoft-logo.svg" alt="" />
+          <img src="./image/logo/gucci-logo.svg" alt="" />
+          <img src="./image/logo/airbnb-logo.svg" alt="" />
+          <img src="./image/logo/uber.svg" alt="" />
+
+          <p class="w-25">Give us a Call 1-888-111-2222 and we can set you up, or  <a class="text-decoration-underline" href="">check our pricing plans</a> </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container-fluid ">
+      <div class="container contact-container min-vh-100 d-flex align-items-center justify-content-center">
+        
+            <div class="">
+              <h4 class="display-5 fw-bold ">Get Our Newsletter</h4>
+              <p class="text-center fw-bold">To join the worldwide community</p>
+              <div class="w50 d-flex pt-3">
+                <input class="flex-grow-1 me-2 rounded-0 border-1 p-2" placeholder="Type your Email Address" type="text">
+                <button class="btn btn-primary text-white btn-lg rounded-0">Send Now</button>
+              </div>
+        
+        </div>
+      </div>
+      <hr>
+    </section>
+
+    <footer class="container-fluid" id="fooder">
+      <div class="container d-flex justify-content-center">
+        <p>Copyright © 2021 AR Shakir . All Rights Reseved.</p>
+      </div>
+    </footer>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>

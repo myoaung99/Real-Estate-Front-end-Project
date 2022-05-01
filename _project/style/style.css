@@ -11973,7 +11973,7 @@ ul li {
   list-style: none;
 }
 
-.active {
+.site-nav .active {
   border-bottom: 2px solid #31353b;
 }
 
@@ -12018,12 +12018,12 @@ ul li {
 }
 
 .header-img img {
-  width: 500px;
+  width: 80%;
 }
 
 .header__brands {
   position: absolute;
-  bottom: 2rem;
+  bottom: 1rem;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -12057,5 +12057,50 @@ ul li {
 .social-v a {
   color: #000000 !important;
   margin-bottom: 10px;
+}
+
+.bs-tab-link {
+  font-weight: 500 !important;
+}
+
+.bs-tab-link:hover {
+  color: #c62815 !important;
+}
+
+.bs-tab .bs-tab-link.active {
+  color: #f85a47;
+  border-bottom: 2px solid #f85a47 !important;
+  font-weight: 600;
+}
+
+.service__small-span {
+  position: absolute;
+  z-index: 50;
+  top: 10px;
+  left: 10px;
+}
+
+.service__small-span span {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 3px 6px;
+  background-color: gray;
+  cursor: pointer;
+}
+
+.portfoli-table {
+  table-layout: fixed;
+}
+
+#portfoli .container {
+  background-color: #f1ffff;
+}
+
+.card {
+  border-radius: 0.5rem !important;
+}
+
+.card .card-text {
+  min-height: 100px !important;
 }
 /*# sourceMappingURL=style.css.map */

@@ -8,6 +8,7 @@ $secondary: #55585b;
 $text-primary: #000000;
 $text-secondary: #31353b;
 $brand-logo: #718087;
+$soft-bg: #f1ffff;
 
 $font-family-sans-serif: "Radio Canada", sans-serif;
 
@@ -35,7 +36,7 @@ ul li {
   list-style: none;
 }
 
-.active {
+.site-nav .active {
   border-bottom: 2px solid $text-secondary;
 }
 .site-nav {
@@ -63,13 +64,13 @@ ul li {
   height: 100%;
 
   img {
-    width: 500px;
+    width: 80%;
   }
 }
 
 .header__brands {
   position: absolute;
-  bottom: 2rem;
+  bottom: 1rem;
   width: max-content;
   img {
     padding-right: 3rem;
@@ -90,5 +91,55 @@ ul li {
   a {
     color: $text-primary !important;
     margin-bottom: 10px;
+  }
+}
+
+// service
+.bs-tab-link {
+  font-weight: 500 !important;
+
+  &:hover {
+    color: $primary - 50% !important;
+  }
+}
+
+.bs-tab {
+  .bs-tab-link.active {
+    color: $primary;
+    border-bottom: 2px solid $primary !important;
+    font-weight: 600;
+  }
+}
+
+.service__small-span {
+  position: absolute;
+  z-index: 50;
+  top: 10px;
+  left: 10px;
+
+  span {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 3px 6px;
+    background-color: gray;
+    cursor: pointer;
+  }
+}
+
+.portfoli-table {
+  table-layout: fixed;
+}
+
+#portfoli {
+  .container {
+    background-color: $soft-bg;
+  }
+}
+
+.card {
+  border-radius: 0.5rem !important;
+
+  .card-text {
+    min-height: 100px !important;
   }
 }
