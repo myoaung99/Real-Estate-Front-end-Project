@@ -4,7 +4,7 @@
 // Custom Bootstrap Variables
 
 $primary: #f85a47;
-$secondary: #31353b;
+$secondary: #55585b;
 $text-primary: #000000;
 $text-secondary: #31353b;
 $brand-logo: #718087;
@@ -70,7 +70,7 @@ ul li {
 .header__brands {
   position: absolute;
   bottom: 2rem;
-  width: fit-content;
+  width: max-content;
   img {
     padding-right: 3rem;
   }
