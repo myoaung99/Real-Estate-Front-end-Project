@@ -26,6 +26,7 @@ $font-family-sans-serif: "Radio Canada", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -36,22 +37,35 @@ ul li {
   list-style: none;
 }
 
-.site-nav .active {
-  border-bottom: 2px solid $text-secondary;
-}
 .site-nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 2000;
-  // background-color: #ffffffee;
-  // backdrop-filter: blur(3px);
-  // box-shadow: 0 0 5px #00000020;
 }
 
-#header-section {
+.site-nav-scroll {
+  position: fixed;
+  background-color: #ffffffee;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 15px #00000020;
+  color: #fff !important;
+  animation: toScroll 0.5s ease-in;
+}
+
+@keyframes toScroll {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+#home-section {
   background-image: url("./../image/header-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .header-text {
@@ -70,7 +84,7 @@ ul li {
 
 .header__brands {
   position: absolute;
-  bottom: 1rem;
+  bottom: 2rem;
   width: max-content;
   img {
     padding-right: 3rem;
@@ -109,6 +123,10 @@ ul li {
     border-bottom: 2px solid $primary !important;
     font-weight: 600;
   }
+
+  .bs-tab-link {
+    cursor: pointer;
+  }
 }
 
 .service__small-span {
@@ -130,7 +148,7 @@ ul li {
   table-layout: fixed;
 }
 
-#portfoli {
+#portfoli-section {
   .container {
     background-color: $soft-bg;
   }
@@ -141,5 +159,122 @@ ul li {
 
   .card-text {
     min-height: 100px !important;
+  }
+}
+
+#contact-section {
+  position: relative;
+  margin-top: 5rem;
+  padding: 0 !important;
+}
+
+.contact-banner-img {
+  height: 100vh;
+  background-image: url("./../image/city-building-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  filter: blur(5px);
+}
+
+.contact-section__container {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  width: 50% !important;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+// ipad pro
+@media screen and (max-width: 1024px) {
+  .active-nav {
+    border-left: 5px solid $primary;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    a {
+      color: $primary !important;
+    }
+  }
+  #home-section {
+    .min-vh-100 {
+      min-height: 50vh !important;
+    }
+    background-position: right;
+    background-size: cover;
+  }
+  .contact-section__container {
+    width: 80% !important;
+  }
+}
+
+// Tablet
+@media screen and (max-width: 790px) {
+  .bio-section__header {
+    width: 80% !important;
+  }
+  .bio-brands {
+    flex-wrap: wrap !important;
+    img {
+      width: 25% !important;
+      padding: 2rem !important;
+    }
+
+    div {
+      width: 100% !important;
+    }
+  }
+
+  .social-v {
+    right: 5%;
+  }
+
+  .site-nav {
+    ul {
+      background-color: $soft-bg;
+    }
+    li {
+      text-align: center !important;
+      padding: 0 !important;
+      margin: 0.5rem;
+    }
+  }
+
+  .contact-section__container {
+    width: 80% !important;
+  }
+  #home-section {
+    background: unset;
+  }
+}
+
+// phone
+@media screen and (max-width: 480px) {
+  .bio-section__header {
+    width: 100% !important;
+  }
+  .bio-brands {
+    img {
+      width: 50% !important;
+    }
+  }
+  .service-section__para {
+    width: 100% !important;
+  }
+
+  .contact-section__container {
+    width: 100% !important ;
+    padding: 0 1rem;
+  }
+
+  .header-img {
+    img {
+      width: 100%;
+    }
+  }
+
+  .header-text {
+    p {
+      width: 100% !important;
+    }
   }
 }

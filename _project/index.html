@@ -17,86 +17,100 @@
   </head>
   <body>
     <header class="container-fluid site-nav">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-              <nav class="navbar navbar-expand-lg navbar-light site-nav>
-                <a class="navbar-brand" href="#">SmartSpace</a>
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+      <div class="container px-0 py-2">
+        <div class="row justify-content-end">
+          <div class="col-12 px-0">
+            <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-0">
+              <a class="navbar-brand ms-4" href="#">
+                <h4 class="mb-0">SmartSpace</h4>
+              </a>
+              <button
+                class="navbar-toggler me-4 mb-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="fas fa-bars"></span>
+              </button>
 
-                <div
-                  class="collapse navbar-collapse justify-content-end"
-                  id="navbarSupportedContent"
-                >
-                  <!-- To Make text visible-->
-                  <ul class="navbar-nav pt-3 pt-lg-0">
-                    <li class="nav-item px-3 active">
-                      <a class="nav-link" href="#home">Home </a>
-                    </li>
+              <div
+                class="collapse navbar-collapse justify-content-end"
+                id="navbarSupportedContent"
+              >
+                <!-- To Make text visible-->
+                <ul class="navbar-nav pt-3 pt-lg-0">
+                  <li class="nav-item py-0">
+                    <a class="nav-link m-0 py-2" href="#home-section">Home </a>
+                  </li>
 
-                    <li class="nav-item px-3">
-                      <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item px-3">
-                      <a class="nav-link" href="#service">Service</a>
-                    </li>
-                    <li class="nav-item px-3">
-                      <a class="nav-link" href="#portfoli">Portfoli</a>
-                    </li>
+                  <li class="nav-item py-0">
+                    <a class="nav-link m-0 py-2" href="#about-section">About</a>
+                  </li>
+                  <li class="nav-item py-0">
+                    <a class="nav-link m-0 py-2" href="#service-section"
+                      >Service</a
+                    >
+                  </li>
+                  <li class="nav-item py-0">
+                    <a class="nav-link m-0 py-2" href="#portfoli-section"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li class="nav-item py-0">
+                    <a class="nav-link m-0 py-2" href="#bio-section">Review</a>
+                  </li>
 
-                    <li class="nav-item px-3">
-                      <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-       
+                  <li class="nav-item py-0 px-4">
+                    <a class="nav-link m-0 py-3" href="#contact-section"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
           </div>
         </div>
       </div>
     </header>
 
-    <section class="container-fluid" id="header-section">
-      <div class="container mb-5 ">
+    <section class="container-fluid" id="home-section">
+      <div class="container mb-5 py-5 mt-4 mt-lg-0">
         <!-- hero -->
         <div class="row min-vh-100 flex-column-reverse flex-lg-row">
-          <div class="col-12 col-md-6 position-relative">
-            <div class="header-text">
+          <div class="col-12 col-lg-6 position-relative">
+            <div class="header-text pt-sm-2">
               <span class="text-primary fw-bold py-3"
                 >RESIDENTIAL & OFFICE SPACES</span
               >
-              <h1 class="display-4  fw-bold">
+              <h1 class="display-4 fw-bold">
                 Smart Living Style for Smart People
               </h1>
-              <p class="text-secondary w-75 py-3">
+              <p class="text-secondary w-75 pt-3 py-md-3 m-0">
                 Much did had call new drew that kept. Limits expect wonder law
                 she. Now has you views woman noisy match money rooms.
               </p>
-              <div class="d-flex w-100 justify-content-between mb-5">
+              <div
+                class="d-flex flex-column flex-md-row w-100 justify-content-between my-5"
+              >
                 <input
-                  class="flex-grow-1 me-1 p-2 fs-5"
+                  class="flex-grow-1 me-md-1 p-2"
                   type="text"
                   placeholder=" 🏠 Enter Zipcode to search properties"
                 />
-                <button class="btn btn-primary btn-lg text-white rounded-0">
+                <button
+                  class="btn btn-primary btn-lg text-white rounded-0 mt-3 mt-md-0"
+                >
                   Search Now!
                 </button>
               </div>
             </div>
 
-            <div class="header__brands d-none d-md-block">
-              <p class="fw-light ">Our Amazing Partners</p>
-              <div class="">
+            <div class="header__brands d-none d-lg-block">
+              <p class="fw-light">Our Amazing Partners</p>
+              <div class="d-flex flex-wrap justify-content-around">
                 <img src="./image/logo/buzz-log.svg" alt="" />
                 <img src="./image/logo/chase-logo.svg" alt="" />
                 <img src="./image/logo/microsoft-logo.svg" alt="" />
@@ -106,277 +120,331 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 position-relative">
-            <div class="header-img ms-3">
+          <div class="col-12 col-lg-6 position-relative">
+            <div class="header-img ms-lg-3 mb-2 mb-lg-0">
               <img class="img-fluid" src="./image/header-img.png" alt="" />
             </div>
 
-            <div
-            class="social-v d-none d-md-inline-flex">
+            <div class="social-v d-none d-md-inline-flex">
+              <a href="">
+                <i class="fa fa-facebook"></i>
+              </a>
 
-            <a href="">
-              <i class="fa fa-facebook"></i>
-            </a>
-            
-            <a href="">
-              <i class="fa fa-instagram"></i>
-            </a>
+              <a href="">
+                <i class="fa fa-instagram"></i>
+              </a>
 
-            <a href="">
-              <i class="fa fa-twitter"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-linkedin"></i>
-            </a>
-            
-            
-          </div>
+              <a href="">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="container-fluid">
-      <div class="py-5">
-        <div class="container text-center">
-        <h4 class="mb-2 h1 fw-bold">How it works?</h4>
-        <div class="row justify-content-around py-5 ">
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="mb-5 mb-lg-0">
-              <div class="p-2"><img class="w-25" src="./image/about_icon-1.png" alt=""></div>
-              <div class="my-4">
-                <h4>Research Subsurbs</h4>
-                <p class="about-text px-5 text-secondary">Wonder twenty hunted and put income set desire expect. Am cottage calling.</p>
+    <section id="about-section" class="container-fluid">
+      <div class="">
+        <div class="container text-center mt-3">
+          <h4 class="mb-2 h1 fw-bold">How it works?</h4>
+          <div class="row justify-content-around py-5">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="mb-5 mb-lg-0">
+                <div class="p-2">
+                  <img class="w-25" src="./image/about_icon-1.png" alt="" />
+                </div>
+                <div class="my-4">
+                  <h4>Research Subsurbs</h4>
+                  <p class="about-text px-5 text-secondary">
+                    Wonder twenty hunted and put income set desire expect. Am
+                    cottage calling.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="mb-5 mb-lg-0">
+                <div class="p-2">
+                  <img class="w-25" src="./image/about_icon-2.png" alt="" />
+                </div>
+                <div class="my-4">
+                  <h4>Instant Valuation</h4>
+                  <p class="about-text px-5 text-secondary">
+                    Conveying or northward offending admitting perfectly my.
+                    Colonel gravit and moonlight.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="mb-5 mb-lg-0">
+                <div class="p-2">
+                  <img class="w-25" src="./image/about_icon-3.png" alt="" />
+                </div>
+                <div class="my-4">
+                  <h4>Track Property</h4>
+                  <p class="about-text px-5 text-secondary">
+                    Moderate children at of outweigh it. Unsatiable it
+                    considered invitation he travelling insensible.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="mb-5 mb-lg-0">
-              <div class="p-2"><img class="w-25" src="./image/about_icon-2.png" alt=""></div>
-              <div class="my-4">
-                <h4>Instant Valuation</h4>
-                <p class="about-text px-5 text-secondary">Conveying or northward offending admitting perfectly my. Colonel gravit and moonlight.</p>
-              </div>
-            </div></div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <div class="mb-5 mb-lg-0">
-            <div class="p-2"><img class="w-25" src="./image/about_icon-3.png" alt=""></div>
-            <div class="my-4">
-              <h4>Track Property</h4>
-              <p class="about-text px-5 text-secondary">Moderate children at of outweigh it. Unsatiable it considered invitation he travelling insensible.</p>
-            </div>
-          </div></div>
         </div>
       </div>
-      </div>
-      
     </section>
 
-    <section id="service" class="container-fluid ">
-      <div class="container min-vh-100">
-        <div class="row ">
-          <div class="col-12 ">
+    <section id="service-section" class="container-fluid">
+      <div class="container py-5 my-0 my-lg-5">
+        <div class="row">
+          <div class="col-12">
             <div class="d-flex justify-content-between align-items-start">
-            <div class="">
-              <h4 class="fw-bold h1">Best Real Estate Deals</h4>
-              <p class="w-75 text-secondary">Colonel gravity get thought fat smiling add but. Wonder twenty hunted and put income set desire expect.</p>
+              <div class="">
+                <h4 class="fw-bold h1">Best Real Estate Deals</h4>
+              </div>
+              <button class="btn btn-primary text-white text-nowrap">
+                View All
+              </button>
             </div>
-            <button class="btn btn-primary btn-lg text-white">View All Property</button>
-          </div>
 
-          <ul class="nav bs-tab py-4" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button
-                class="bs-tab-link me-5 py-1 px-3 active border-0 bg-white"
-                id="residential-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#residential"
-                type="button"
-                role="tab"
-                aria-controls="residential"
-                aria-selected="true"
-              >
-              Residential Property
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="bs-tab-link me-5 py-1 px-3 border-0 bg-white"
-                id="commercial-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#commercial"
-                type="button"
-                role="tab"
-                aria-controls="commercial"
-                aria-selected="false"
-              >
-              Commercial Property
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="bs-tab-link me-5 py-1 px-3  border-0 bg-white"
-                id="agriculture-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#agriculture"
-                type="button"
-                role="tab"
-                aria-controls="agriculture"
-                aria-selected="false"
-              >
-              Agriculture Property
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="bs-tab-link me-5 py-1 px-3  border-0 bg-white"
-                id="industrial-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#industrial"
-                type="button"
-                role="tab"
-                aria-controls="industrial"
-                aria-selected="false"
-              >
-              Industrial Property
-              </button>
-            </li>
-          </ul>
-    
-          <div class="tab-content" id="myTabContent">
-            <div
-              class="tab-pane fade show active"
-              id="residential"
-              role="tabpanel"
-              aria-labelledby="residential-tab"
+            <p class="w-75 service-section__para text-secondary mt-3">
+              Colonel gravity get thought fat smiling add but. Wonder twenty
+              hunted and put income set desire expect.
+            </p>
+
+            <ul
+              class="nav bs-tab py-4 justify-content-around justify-content-lg-start"
+              id="myTab"
+              role="tablist"
             >
-              <div class="py-3 d-flex img-container justify-content-evenly">
-                <div class="position-relative pe-4">
-                  <div class="service__small-span">
-                    <span class="me-1">Features</span>
-                    <span>3D</span>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="bs-tab-link me-lg-5 my-2 my-md-0 py-2 px-1 px-md-2 px-lg-3 active border-0 bg-white"
+                  id="residential-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#residential"
+                  type="button"
+                  role="tab"
+                  aria-controls="residential"
+                  aria-selected="true"
+                >
+                  Residential Props
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="bs-tab-link me-lg-5 my-2 my-md-0 py-2 px-1 px-md-2 px-lg-3 border-0 bg-white"
+                  id="commercial-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#commercial"
+                  type="button"
+                  role="tab"
+                  aria-controls="commercial"
+                  aria-selected="false"
+                >
+                  Commercial Props
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="bs-tab-link me-lg-5 my-2 my-md-0 py-2 px-1 px-md-2 px-lg-3 border-0 bg-white"
+                  id="agriculture-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#agriculture"
+                  type="button"
+                  role="tab"
+                  aria-controls="agriculture"
+                  aria-selected="false"
+                >
+                  Agriculture Props
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="bs-tab-link me-lg-5 my-2 my-md-0 py-2 px-1 px-md-2 px-lg-3 border-0 bg-white"
+                  id="industrial-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#industrial"
+                  type="button"
+                  role="tab"
+                  aria-controls="industrial"
+                  aria-selected="false"
+                >
+                  Industrial Props
+                </button>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="residential"
+                role="tabpanel"
+                aria-labelledby="residential-tab"
+              >
+                <div
+                  class="py-3 d-flex flex-column flex-md-row img-container justify-content-evenly"
+                >
+                  <div class="position-relative pe-md-4 pb-3 pb-md-0">
+                    <div class="service__small-span">
+                      <span class="me-1">Features</span>
+                      <span>3D</span>
+                    </div>
+                    <img
+                      class="img-fluid"
+                      src="./image/service-img-1.png"
+                      alt=""
+                    />
                   </div>
-                  <img class=" img-fluid" src="./image/service-img-1.png" alt="" /></div>
-    
-                <div class="position-relative pe-4"><div class="service__small-span">
-                  <span class="me-1">Features</span>
-                  <span>3D</span>
-                </div><img class="img-fluid " src="./image/service-img-1.png" alt="" /></div>
-    
-                <div class="position-relative"><div class="service__small-span">
-                  <span class="me-1">Features</span>
-                  <span>3D</span>
-                </div><img class="img-fluid " src="./image/service-img-3.png" alt="" /></div>
+
+                  <div class="position-relative pe-md-4 pb-3 pb-md-0">
+                    <div class="service__small-span">
+                      <span class="me-1">Features</span>
+                      <span>3D</span>
+                    </div>
+                    <img
+                      class="img-fluid"
+                      src="./image/service-img-1.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="position-relative">
+                    <div class="service__small-span">
+                      <span class="me-1">Features</span>
+                      <span>3D</span>
+                    </div>
+                    <img
+                      class="img-fluid"
+                      src="./image/service-img-3.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
               </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="commercial"
-              role="tabpanel"
-              aria-labelledby="commercial-tab"
-            >
-              ...
-            </div>
-            <div
-            class="tab-pane fade"
-            id="agriculture"
-            role="tabpanel"
-            aria-labelledby="agriculture-tab"
-          >
-            ...
-          </div>
-          <div
-          class="tab-pane fade"
-          id="industrial"
-          role="tabpanel"
-          aria-labelledby="industrial-tab"
-        >
-          ...
-        </div>
-          </div>
-         
-          </div>
-          
-        </div>
-      </div>
-    </section>
-
-    <section id="portfoli" class="container-fluid "> 
-       <h4 class="text-center h1 fw-bold my-5 ">Featured Listing of the Week</h4>
-      <div class="container p-4 min-vh-100">
-      
-        <div class="row align-items-end py-5">
-          <div class="col-12 col-md-6">
-            <div class="">
-              <img class="img-fluid" src="./image/portfoli-img.png" alt="">
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="">
-              <h4 class="h2">The Building where you can live!</h4>
-              <p class="mt-4 mb-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa asperiores eaque voluptate corrupti nobis, ullam a impedit cumque officia ipsum, quod corporis amet sapiente commodi aperiam explicabo ea beatae quibusdam.</p>
-
-              <table class="table table-borderless portfoli-table">
-                <thead>
-                  <tr>
-                    <th scope="col">Budget</th>
-                    <th scope="col">Size</th>
-                    <th scope="col">Type</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td scope="row">Confidential</td>
-                    <td>1200</td>
-                    <td>Office</td>
-                  </tr>
-
-                </tbody>
-              </table>
-
-
-              <table class="table table-borderless portfoli-table">
-                <thead>
-                  <tr>
-                    <th scope="col">Status</th>
-                    <th scope="col">Location</th>
-                    <th scope="col">Flat</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td scope="row">Done</td>
-                    <td>Switzerland</td>
-                    <td>8 rooms</td>
-                  </tr>
-
-                </tbody>
-              </table>
-
-              <div class="d-grid pt-3">
-                <button class="btn btn-primary text-capitalize blck text-white">Yes! I Want To book "office package"</button>
-           
+              <div
+                class="tab-pane fade"
+                id="commercial"
+                role="tabpanel"
+                aria-labelledby="commercial-tab"
+              >
+                Comming soon....
               </div>
-
+              <div
+                class="tab-pane fade"
+                id="agriculture"
+                role="tabpanel"
+                aria-labelledby="agriculture-tab"
+              >
+                Comming soon....
+              </div>
+              <div
+                class="tab-pane fade"
+                id="industrial"
+                role="tabpanel"
+                aria-labelledby="industrial-tab"
+              >
+                Comming soon....
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="bio" class="container-fluid ">
-      <div class="container min-vh-100">
-        <h4 class="fs-2 w-50 mt-5 pt-5 mb-4">Loved by businesses, and individuals across the globe</h4>
+    <section id="portfoli-section" class="container-fluid">
+      <div class="my-5 pt-5">
+        <h4 class="text-center h1 fw-bold mb-0 mb-lg-5">
+          Featured Listing of the Week
+        </h4>
+        <div class="container p-4">
+          <div class="row align-items-end py-5">
+            <div class="col-12 col-md-6">
+              <div class="pb-5 pb-md-0">
+                <img class="img-fluid" src="./image/portfoli-img.png" alt="" />
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="px-1 px-lg-0">
+                <h4 class="h2">The Building where you can live!</h4>
+                <p class="mt-4 mb-5 text-secondary">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                  asperiores eaque voluptate corrupti nobis, ullam a impedit
+                  cumque officia ipsum, quod corporis amet sapiente commodi
+                  aperiam explicabo ea beatae quibusdam.
+                </p>
+
+                <table class="table table-borderless portfoli-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Budget</th>
+                      <th scope="col">Size</th>
+                      <th scope="col">Type</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row">Confidential</td>
+                      <td>1200</td>
+                      <td>Office</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="table table-borderless portfoli-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Status</th>
+                      <th scope="col">Location</th>
+                      <th scope="col">Flat</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row">Done</td>
+                      <td>Switzerland</td>
+                      <td>8 rooms</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="d-grid pt-3">
+                  <button
+                    class="btn btn-primary text-capitalize blck text-white"
+                  >
+                    I Want To book "office package"
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="bio-section" class="container-fluid">
+      <div class="container">
+        <h4 class="fs-2 w-50 bio-section__header my-3 my-lg-5 pt-5">
+          Loved by businesses, and individuals across the globe
+        </h4>
         <div class="row justify-content-around">
-          <div class="col-12 col-md-6 col-lg-4">
+          <div class="col-12 col-md-6 col-lg-4 mt-2 m-lg-0">
             <div class="">
-              <div class="card" > 
+              <div class="card">
                 <div class="card-body">
                   <h5 class="card-title">⭐⭐⭐⭐⭐</h5>
-                  <p class="card-text my-4">Moderate children at of outweigh it. Unsatiable it considered invitation he travelling insensible. Consulted admitting oh mr up as described.</p>
+                  <p class="card-text my-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Libero porro voluptas impedit aspernatur sunt, enim dicta ea
+                    veniam aliquid quod,
+                  </p>
                   <div class="d-flex pt-3">
                     <div class="me-3">
-                      <img src="./image/bio-img-1.png" alt="">
+                      <img src="./image/bio-img-1.png" alt="" />
                     </div>
                     <div class="">
                       <span class="fw-bold d-block">Jane Cooper</span>
@@ -387,43 +455,55 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4"> <div class="">
-            <div class="card" > 
-              <div class="card-body">
-                <h5 class="card-title">⭐⭐⭐⭐⭐</h5>
-                <p class="card-text my-4">The and collecting motionless difficulty son. His hearing staying ten colonel met. Sex drew six easy four dear cold</p>
-                <div class="d-flex pt-3">
-                  <div class="me-3">
-                    <img src="./image/bio-img-2.png" alt="">
-                  </div>
-                  <div class="">
-                    <span class="fw-bold d-block">Robert Fox</span>
-                    <span class="fw-light">New York City</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div></div>
-          <div class="col-12 col-md-6 col-lg-4"> <div class="">
-            <div class="card" > 
-              <div class="card-body">
-                <h5 class="card-title">⭐⭐⭐⭐⭐</h5>
-                <p class="card-text my-4">Sociable on as carriage my position weddings raillery consider. Peculiar trifling absolute and wandered vicinity property yet.</p>
-                <div class="d-flex pt-3">
-                  <div class="me-3">
-                    <img src="./image/bio-img-3.png" alt="">
-                  </div>
-                  <div class="">
-                    <span class="fw-bold d-block">Leslie Alexander</span>
-                    <span class="fw-light">Buffalo, NJ</span>
+          <div class="col-12 col-md-6 col-lg-4 mt-2 m-lg-0">
+            <div class="">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">⭐⭐⭐⭐⭐</h5>
+                  <p class="card-text my-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Libero porro voluptas impedit aspernatur sunt, enim dicta ea
+                    veniam aliquid quod,
+                  </p>
+                  <div class="d-flex pt-3">
+                    <div class="me-3">
+                      <img src="./image/bio-img-2.png" alt="" />
+                    </div>
+                    <div class="">
+                      <span class="fw-bold d-block">Robert Fox</span>
+                      <span class="fw-light">New York City</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div></div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mt-2 m-lg-0">
+            <div class="">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">⭐⭐⭐⭐⭐</h5>
+                  <p class="card-text my-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Libero porro voluptas impedit aspernatur sunt, enim dicta ea
+                    veniam aliquid quod,
+                  </p>
+                  <div class="d-flex pt-3">
+                    <div class="me-3">
+                      <img src="./image/bio-img-3.png" alt="" />
+                    </div>
+                    <div class="">
+                      <span class="fw-bold d-block">Leslie Alexander</span>
+                      <span class="fw-light">Buffalo, NJ</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="d-flex justify-content-between mt-5 pt-5">
+        <div class="d-flex bio-brands justify-content-around mt-0 mt-lg-5 pt-5">
           <img src="./image/logo/buzz-log.svg" alt="" />
           <img src="./image/logo/chase-logo.svg" alt="" />
           <img src="./image/logo/microsoft-logo.svg" alt="" />
@@ -431,33 +511,53 @@
           <img src="./image/logo/airbnb-logo.svg" alt="" />
           <img src="./image/logo/uber.svg" alt="" />
 
-          <p class="w-25">Give us a Call 1-888-111-2222 and we can set you up, or  <a class="text-decoration-underline" href="">check our pricing plans</a> </p>
+          <div class="w-25 text-center mt-3 mt-lg-0">
+            <p class="">
+              Give us a Call 1-888-111-2222 and we can set you up, or
+              <a class="text-decoration-underline" href=""
+                >check our pricing plans</a
+              >
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="container-fluid ">
-      <div class="container contact-container min-vh-100 d-flex align-items-center justify-content-center">
-        
-            <div class="">
-              <h4 class="display-5 fw-bold ">Get Our Newsletter</h4>
-              <p class="text-center fw-bold">To join the worldwide community</p>
-              <div class="w50 d-flex pt-3">
-                <input class="flex-grow-1 me-2 rounded-0 border-1 p-2" placeholder="Type your Email Address" type="text">
-                <button class="btn btn-primary text-white btn-lg rounded-0">Send Now</button>
-              </div>
-        
+    <section id="contact-section" class="container-fluid">
+      <div class="contact-banner-img"></div>
+      <div
+        class="container contact-container d-flex justify-content-center align-items-center"
+      >
+        <div class="contact-section__container text-center">
+          <h4 class="display-2 fw-bold">Get Our Newsletter</h4>
+          <p class="fw-bold">To join the worldwide community</p>
+          <div
+            class="d-flex flex-column justify-content-between flex-md-row pt-3 d-flex"
+          >
+            <input
+              class="me-md-2 rounded-0 border-1 p-2 flex-md-grow-1"
+              placeholder="Type your Email Address"
+              type="text"
+            />
+            <button
+              class="btn btn-primary text-white btn-lg rounded-0 mt-3 mt-md-0"
+            >
+              Send Now
+            </button>
+          </div>
         </div>
       </div>
-      <hr>
     </section>
 
-    <footer class="container-fluid" id="fooder">
-      <div class="container d-flex justify-content-center">
-        <p>Copyright © 2021 AR Shakir . All Rights Reseved.</p>
+    <footer class="container-fluid" id="footer-section">
+      <div class="container mt-3 d-flex justify-content-center">
+        <p class="text-center">Copyright © 2022. All Rights Reseved.</p>
       </div>
     </footer>
 
+    <script src="./js/jquery.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./vendor/way_point/jquery.waypoints.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

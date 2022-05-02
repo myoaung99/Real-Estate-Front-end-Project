@@ -11963,6 +11963,7 @@ fieldset:disabled .btn {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -11973,20 +11974,51 @@ ul li {
   list-style: none;
 }
 
-.site-nav .active {
-  border-bottom: 2px solid #31353b;
-}
-
 .site-nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 2000;
 }
 
-#header-section {
+.site-nav-scroll {
+  position: fixed;
+  background-color: #ffffffee;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  -webkit-box-shadow: 0 0 15px #00000020;
+          box-shadow: 0 0 15px #00000020;
+  color: #fff !important;
+  -webkit-animation: toScroll 0.5s ease-in;
+          animation: toScroll 0.5s ease-in;
+}
+
+@-webkit-keyframes toScroll {
+  from {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes toScroll {
+  from {
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+#home-section {
   background-image: url("./../image/header-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .header-text {
@@ -12023,7 +12055,7 @@ ul li {
 
 .header__brands {
   position: absolute;
-  bottom: 1rem;
+  bottom: 2rem;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -12073,6 +12105,10 @@ ul li {
   font-weight: 600;
 }
 
+.bs-tab .bs-tab-link {
+  cursor: pointer;
+}
+
 .service__small-span {
   position: absolute;
   z-index: 50;
@@ -12092,7 +12128,7 @@ ul li {
   table-layout: fixed;
 }
 
-#portfoli .container {
+#portfoli-section .container {
   background-color: #f1ffff;
 }
 
@@ -12102,5 +12138,108 @@ ul li {
 
 .card .card-text {
   min-height: 100px !important;
+}
+
+#contact-section {
+  position: relative;
+  margin-top: 5rem;
+  padding: 0 !important;
+}
+
+.contact-banner-img {
+  height: 100vh;
+  background-image: url("./../image/city-building-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
+.contact-section__container {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  width: 50% !important;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+@media screen and (max-width: 1024px) {
+  .active-nav {
+    border-left: 5px solid #f85a47;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  .active-nav a {
+    color: #f85a47 !important;
+  }
+  #home-section {
+    background-position: right;
+    background-size: cover;
+  }
+  #home-section .min-vh-100 {
+    min-height: 50vh !important;
+  }
+  .contact-section__container {
+    width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .bio-section__header {
+    width: 80% !important;
+  }
+  .bio-brands {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  .bio-brands img {
+    width: 25% !important;
+    padding: 2rem !important;
+  }
+  .bio-brands div {
+    width: 100% !important;
+  }
+  .social-v {
+    right: 5%;
+  }
+  .site-nav ul {
+    background-color: #f1ffff;
+  }
+  .site-nav li {
+    text-align: center !important;
+    padding: 0 !important;
+    margin: 0.5rem;
+  }
+  .contact-section__container {
+    width: 80% !important;
+  }
+  #home-section {
+    background: unset;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bio-section__header {
+    width: 100% !important;
+  }
+  .bio-brands img {
+    width: 50% !important;
+  }
+  .service-section__para {
+    width: 100% !important;
+  }
+  .contact-section__container {
+    width: 100% !important;
+    padding: 0 1rem;
+  }
+  .header-img img {
+    width: 100%;
+  }
+  .header-text p {
+    width: 100% !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
