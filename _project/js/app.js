@@ -10,6 +10,27 @@ $(window).ready(function () {
     }
   });
 
+  function changeMobileMenuIcon() {
+    if ($(".navbar-toggler").hasClass("collapsed")) {
+      $(".mobile-menu-btn .mobile-menu-icon")
+        .removeClass("fa-xmark")
+        .addClass("fa-bars");
+    } else {
+      $(".mobile-menu-btn .mobile-menu-icon")
+        .addClass("fa-xmark")
+        .removeClass("fa-bars");
+    }
+  }
+
+  $(".mobile-menu-btn").click(function () {
+    changeMobileMenuIcon();
+  });
+
+  $(".navbar-nav>li>a").on("click", function () {
+    $(".navbar-collapse").collapse("hide");
+    changeMobileMenuIcon();
+  });
+
   function setActiveNav(current) {
     $(".nav-link").removeClass("active-nav");
     $(`.nav-link[href='#${current}']`).addClass("active-nav");
@@ -17,7 +38,7 @@ $(window).ready(function () {
 
   (function scrollNav() {
     let currentActive = $("section[id]");
-    console.log(currentActive[0]);
+
     currentActive.waypoint(
       function (direction) {
         if (direction == "down") {

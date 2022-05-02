@@ -37,6 +37,14 @@ ul li {
   list-style: none;
 }
 
+.active-nav {
+  border-bottom: 3px solid $primary;
+
+  a {
+    color: $primary !important;
+  }
+}
+
 .site-nav {
   position: absolute;
   top: 0;
@@ -186,9 +194,21 @@ ul li {
   z-index: 1000;
 }
 
+.mobile-menu-btn {
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
 // ipad pro
 @media screen and (max-width: 1024px) {
   .active-nav {
+    border: none;
     border-left: 5px solid $primary;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     a {
@@ -230,7 +250,7 @@ ul li {
 
   .site-nav {
     ul {
-      background-color: $soft-bg;
+      background-color: #fff;
     }
     li {
       text-align: center !important;

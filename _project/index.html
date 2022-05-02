@@ -7,10 +7,7 @@
     <title>Real-estate</title>
 
     <!-- Fontawesome icon link -->
-    <link
-      rel="stylesheet"
-      href="./node_modules/font-awesome/css/font-awesome.css"
-    />
+    <link rel="stylesheet" href="./vendor/fontawesome/css/all.css" />
 
     <!-- Sass Generated css file -->
     <link rel="stylesheet" href="./style/style.css" />
@@ -18,14 +15,14 @@
   <body>
     <header class="container-fluid site-nav">
       <div class="container px-0 py-2">
-        <div class="row justify-content-end">
+        <div class="row">
           <div class="col-12 px-0">
             <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-0">
               <a class="navbar-brand ms-4" href="#">
                 <h4 class="mb-0">SmartSpace</h4>
               </a>
               <button
-                class="navbar-toggler me-4 mb-2"
+                class="navbar-toggler btn me-4 mobile-menu-btn border-0"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent"
@@ -33,15 +30,15 @@
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span class="fas fa-bars"></span>
+                <span class="fa fa-solid fa-bars fa-2x mobile-menu-icon"></span>
               </button>
 
               <div
-                class="collapse navbar-collapse justify-content-end"
+                class="collapse navbar-collapse justify-content-end mobile-menu-items"
                 id="navbarSupportedContent"
               >
                 <!-- To Make text visible-->
-                <ul class="navbar-nav pt-3 pt-lg-0">
+                <ul class="navbar-nav pt-2 mt-2 mt-lg-0 pt-lg-0">
                   <li class="nav-item py-0">
                     <a class="nav-link m-0 py-2" href="#home-section">Home </a>
                   </li>
@@ -63,8 +60,8 @@
                     <a class="nav-link m-0 py-2" href="#bio-section">Review</a>
                   </li>
 
-                  <li class="nav-item py-0 px-4">
-                    <a class="nav-link m-0 py-3" href="#contact-section"
+                  <li class="nav-item py-0">
+                    <a class="nav-link m-0 py-2" href="#contact-section"
                       >Contact</a
                     >
                   </li>

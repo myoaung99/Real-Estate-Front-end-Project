@@ -11974,6 +11974,14 @@ ul li {
   list-style: none;
 }
 
+.active-nav {
+  border-bottom: 3px solid #f85a47;
+}
+
+.active-nav a {
+  color: #f85a47 !important;
+}
+
 .site-nav {
   position: absolute;
   top: 0;
@@ -12166,8 +12174,19 @@ ul li {
   z-index: 1000;
 }
 
+.mobile-menu-btn:focus-visible {
+  outline: none;
+}
+
+.mobile-menu-btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 @media screen and (max-width: 1024px) {
   .active-nav {
+    border: none;
     border-left: 5px solid #f85a47;
     -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -12206,7 +12225,7 @@ ul li {
     right: 5%;
   }
   .site-nav ul {
-    background-color: #f1ffff;
+    background-color: #fff;
   }
   .site-nav li {
     text-align: center !important;
