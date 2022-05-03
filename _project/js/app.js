@@ -63,4 +63,20 @@ $(window).ready(function () {
       }
     );
   })();
+
+  const typed = new Typed("#typed", {
+    strings: ["^1000 People", " Leader", "Elite"],
+    typeSpeed: 40,
+    backSpeed: 40,
+    loop: false,
+  });
 });
+
+wow = new WOW({
+  boxClass: "wow", // default
+  animateClass: "animate__animated", // default
+  offset: 0, // default
+  mobile: true, // default
+  live: true, // default
+});
+wow.init();

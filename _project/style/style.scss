@@ -39,10 +39,7 @@ ul li {
 
 .active-nav {
   border-bottom: 3px solid $primary;
-
-  a {
-    color: $primary !important;
-  }
+  color: $primary !important;
 }
 
 .site-nav {
@@ -57,7 +54,7 @@ ul li {
   backdrop-filter: blur(3px);
   box-shadow: 0 0 15px #00000020;
   color: #fff !important;
-  animation: toScroll 0.5s ease-in;
+  animation: toScroll ease-in;
 }
 
 @keyframes toScroll {
@@ -79,6 +76,10 @@ ul li {
 .header-text {
   height: 100%;
   @include flexCenter(column);
+
+  span {
+    color: $primary;
+  }
 }
 
 .header-img {
@@ -94,6 +95,15 @@ ul li {
   position: absolute;
   bottom: 2rem;
   width: max-content;
+  z-index: 1000;
+  a {
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
   img {
     padding-right: 3rem;
   }
@@ -113,6 +123,12 @@ ul li {
   a {
     color: $text-primary !important;
     margin-bottom: 10px;
+    transition: 0.3s ease;
+
+    &:hover {
+      color: $primary !important;
+      transform: translateY(-5px);
+    }
   }
 }
 
@@ -167,6 +183,16 @@ ul li {
 
   .card-text {
     min-height: 100px !important;
+  }
+}
+
+.bio-brands {
+  a {
+    transition: 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
   }
 }
 
@@ -234,9 +260,11 @@ ul li {
   }
   .bio-brands {
     flex-wrap: wrap !important;
-    img {
+    a {
       width: 25% !important;
-      padding: 2rem !important;
+      img {
+        padding: 2rem !important;
+      }
     }
 
     div {
@@ -273,8 +301,11 @@ ul li {
     width: 100% !important;
   }
   .bio-brands {
-    img {
+    a {
       width: 50% !important;
+      img {
+        width: 100% !important;
+      }
     }
   }
   .service-section__para {

@@ -11976,9 +11976,6 @@ ul li {
 
 .active-nav {
   border-bottom: 3px solid #f85a47;
-}
-
-.active-nav a {
   color: #f85a47 !important;
 }
 
@@ -11996,8 +11993,8 @@ ul li {
   -webkit-box-shadow: 0 0 15px #00000020;
           box-shadow: 0 0 15px #00000020;
   color: #fff !important;
-  -webkit-animation: toScroll 0.5s ease-in;
-          animation: toScroll 0.5s ease-in;
+  -webkit-animation: toScroll ease-in;
+          animation: toScroll ease-in;
 }
 
 @-webkit-keyframes toScroll {
@@ -12043,6 +12040,10 @@ ul li {
           justify-content: center;
 }
 
+.header-text span {
+  color: #f85a47;
+}
+
 .header-img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12067,6 +12068,18 @@ ul li {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  z-index: 1000;
+}
+
+.header__brands a {
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.header__brands a:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .header__brands img {
@@ -12097,6 +12110,14 @@ ul li {
 .social-v a {
   color: #000000 !important;
   margin-bottom: 10px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.social-v a:hover {
+  color: #f85a47 !important;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .bs-tab-link {
@@ -12146,6 +12167,16 @@ ul li {
 
 .card .card-text {
   min-height: 100px !important;
+}
+
+.bio-brands a {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.bio-brands a:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 #contact-section {
@@ -12214,8 +12245,10 @@ ul li {
     -ms-flex-wrap: wrap !important;
         flex-wrap: wrap !important;
   }
-  .bio-brands img {
+  .bio-brands a {
     width: 25% !important;
+  }
+  .bio-brands a img {
     padding: 2rem !important;
   }
   .bio-brands div {
@@ -12244,8 +12277,11 @@ ul li {
   .bio-section__header {
     width: 100% !important;
   }
-  .bio-brands img {
+  .bio-brands a {
     width: 50% !important;
+  }
+  .bio-brands a img {
+    width: 100% !important;
   }
   .service-section__para {
     width: 100% !important;

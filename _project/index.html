@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Real-estate</title>
 
+    <!-- animate it -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!-- Fontawesome icon link -->
     <link rel="stylesheet" href="./vendor/fontawesome/css/all.css" />
 
@@ -13,12 +19,14 @@
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <header class="container-fluid site-nav">
+    <header
+      class="container-fluid site-nav animate__animated animate__fadeInDown animate__slow"
+    >
       <div class="container px-0 py-2">
         <div class="row">
           <div class="col-12 px-0">
             <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-0">
-              <a class="navbar-brand ms-4" href="#">
+              <a class="navbar-brand ms-4" href="#home-section">
                 <h4 class="mb-0">SmartSpace</h4>
               </a>
               <button
@@ -40,27 +48,29 @@
                 <!-- To Make text visible-->
                 <ul class="navbar-nav pt-2 mt-2 mt-lg-0 pt-lg-0">
                   <li class="nav-item py-0">
-                    <a class="nav-link m-0 py-2" href="#home-section">Home </a>
+                    <a class="nav-link m-0 py-2" href="#home-section"
+                      ><i class="fas fa-home"></i> Home
+                    </a>
                   </li>
 
-                  <li class="nav-item py-0">
+                  <li class="nav-item py-0 px-lg-3">
                     <a class="nav-link m-0 py-2" href="#about-section">About</a>
                   </li>
-                  <li class="nav-item py-0">
+                  <li class="nav-item py-0 px-lg-3">
                     <a class="nav-link m-0 py-2" href="#service-section"
                       >Service</a
                     >
                   </li>
-                  <li class="nav-item py-0">
+                  <li class="nav-item py-0 px-lg-3">
                     <a class="nav-link m-0 py-2" href="#portfoli-section"
                       >Portfolio</a
                     >
                   </li>
-                  <li class="nav-item py-0">
+                  <li class="nav-item py-0 px-lg-3">
                     <a class="nav-link m-0 py-2" href="#bio-section">Review</a>
                   </li>
 
-                  <li class="nav-item py-0">
+                  <li class="nav-item py-0 px-lg-3">
                     <a class="nav-link m-0 py-2" href="#contact-section"
                       >Contact</a
                     >
@@ -77,13 +87,15 @@
       <div class="container mb-5 py-5 mt-4 mt-lg-0">
         <!-- hero -->
         <div class="row min-vh-100 flex-column-reverse flex-lg-row">
-          <div class="col-12 col-lg-6 position-relative">
+          <div
+            class="col-12 col-lg-6 position-relative animate__animated animate__fadeInLeft"
+          >
             <div class="header-text pt-sm-2">
               <span class="text-primary fw-bold py-3"
                 >RESIDENTIAL & OFFICE SPACES</span
               >
               <h1 class="display-4 fw-bold">
-                Smart Living Style for Smart People
+                Smart Living Style For Smart <span id="typed"></span>
               </h1>
               <p class="text-secondary w-75 pt-3 py-md-3 m-0">
                 Much did had call new drew that kept. Limits expect wonder law
@@ -95,47 +107,72 @@
                 <input
                   class="flex-grow-1 me-md-1 p-2"
                   type="text"
-                  placeholder=" 🏠 Enter Zipcode to search properties"
+                  placeholder="Enter Zipcode to search properties"
                 />
                 <button
-                  class="btn btn-primary btn-lg text-white rounded-0 mt-3 mt-md-0"
+                  class="btn btn-primary btn-lg text-white rounded-0 mt-3 mt-md-0 animate__animated animate__flash animate__delay-1s"
                 >
                   Search Now!
                 </button>
               </div>
             </div>
 
-            <div class="header__brands d-none d-lg-block">
+            <div
+              class="header__brands d-none d-lg-block animate__animated animate__fadeInUp"
+            >
               <p class="fw-light">Our Amazing Partners</p>
               <div class="d-flex flex-wrap justify-content-around">
-                <img src="./image/logo/buzz-log.svg" alt="" />
-                <img src="./image/logo/chase-logo.svg" alt="" />
-                <img src="./image/logo/microsoft-logo.svg" alt="" />
-                <img src="./image/logo/gucci-logo.svg" alt="" />
-                <img src="./image/logo/airbnb-logo.svg" alt="" />
-                <img src="./image/logo/uber.svg" alt="" />
+                <a href="https://www.chase.com/" target="_blank"
+                  ><img src="./image/logo/chase-logo.svg" alt="The chase logo"
+                /></a>
+
+                <a href="https://www.microsoft.com/en-us/?ql=3" target="_blank">
+                  <img
+                    src="./image/logo/microsoft-logo.svg"
+                    alt="Microsoft logo"
+                /></a>
+
+                <a href="https://www.gucci.com/" target="_blank"
+                  ><img src="./image/logo/gucci-logo.svg" alt="Gucci logo"
+                /></a>
+
+                <a href="https://www.uber.com/" target="_blank"
+                  ><img src="./image/logo/uber.svg" alt="Uber logo" />
+                </a>
+
+                <a href="https://www.airbnb.com/" target="_blank"
+                  ><img src="./image/logo/airbnb-logo.svg" alt="Airbnb logo"
+                /></a>
+
+                <a href="www.google.com" target="_blank"
+                  ><img src="./image/logo/buzz-log.svg" alt="The buzz logo"
+                /></a>
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-6 position-relative">
+          <div
+            class="col-12 col-lg-6 position-relative animate__animated animate__fadeIn"
+          >
             <div class="header-img ms-lg-3 mb-2 mb-lg-0">
               <img class="img-fluid" src="./image/header-img.png" alt="" />
             </div>
 
-            <div class="social-v d-none d-md-inline-flex">
-              <a href="">
-                <i class="fa fa-facebook"></i>
+            <div
+              class="social-v d-none d-md-inline-flex animate__animated animate__fadeInUp"
+            >
+              <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i>
               </a>
 
-              <a href="">
-                <i class="fa fa-instagram"></i>
+              <a href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
               </a>
 
-              <a href="">
-                <i class="fa fa-twitter"></i>
+              <a href="https://www.twitter.com" target="_blank">
+                <i class="fab fa-twitter"></i>
               </a>
-              <a href="">
-                <i class="fa fa-linkedin"></i>
+              <a href="https://www.linkedin.com" target="_blank">
+                <i class="fab fa-linkedin"></i>
               </a>
             </div>
           </div>
@@ -146,9 +183,9 @@
     <section id="about-section" class="container-fluid">
       <div class="">
         <div class="container text-center mt-3">
-          <h4 class="mb-2 h1 fw-bold">How it works?</h4>
+          <h4 class="mb-2 h1 fw-bold wow animate__fadeInDown">How it works?</h4>
           <div class="row justify-content-around py-5">
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 wow animate__fadeIn">
               <div class="mb-5 mb-lg-0">
                 <div class="p-2">
                   <img class="w-25" src="./image/about_icon-1.png" alt="" />
@@ -162,7 +199,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 wow animate__fadeIn">
               <div class="mb-5 mb-lg-0">
                 <div class="p-2">
                   <img class="w-25" src="./image/about_icon-2.png" alt="" />
@@ -176,7 +213,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 wow animate__fadeIn">
               <div class="mb-5 mb-lg-0">
                 <div class="p-2">
                   <img class="w-25" src="./image/about_icon-3.png" alt="" />
@@ -201,20 +238,26 @@
           <div class="col-12">
             <div class="d-flex justify-content-between align-items-start">
               <div class="">
-                <h4 class="fw-bold h1">Best Real Estate Deals</h4>
+                <h4 class="fw-bold h1 wow animate__fadeInLeft animate__faster">
+                  Best Real Estate Deals
+                </h4>
               </div>
-              <button class="btn btn-primary text-white text-nowrap">
+              <button
+                class="btn btn-primary text-white text-nowrap wow animate__fadeInRight"
+              >
                 View All
               </button>
             </div>
 
-            <p class="w-75 service-section__para text-secondary mt-3">
+            <p
+              class="w-75 service-section__para text-secondary mt-3 wow animate__fadeInLeft animate__slow"
+            >
               Colonel gravity get thought fat smiling add but. Wonder twenty
               hunted and put income set desire expect.
             </p>
 
             <ul
-              class="nav bs-tab py-4 justify-content-around justify-content-lg-start"
+              class="nav bs-tab py-4 justify-content-around justify-content-lg-start wow animate__fadeIn"
               id="myTab"
               role="tablist"
             >
@@ -276,7 +319,7 @@
               </li>
             </ul>
 
-            <div class="tab-content" id="myTabContent">
+            <div class="tab-content wow animate__fadeInUp" id="myTabContent">
               <div
                 class="tab-pane fade show active"
                 id="residential"
@@ -355,17 +398,17 @@
 
     <section id="portfoli-section" class="container-fluid">
       <div class="my-5 pt-5">
-        <h4 class="text-center h1 fw-bold mb-0 mb-lg-5">
+        <h4 class="text-center h1 fw-bold mb-0 mb-lg-5 wow animate__fadeIn">
           Featured Listing of the Week
         </h4>
         <div class="container p-4">
           <div class="row align-items-end py-5">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 wow animate__fadeIn">
               <div class="pb-5 pb-md-0">
                 <img class="img-fluid" src="./image/portfoli-img.png" alt="" />
               </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 wow animate__fadeIn">
               <div class="px-1 px-lg-0">
                 <h4 class="h2">The Building where you can live!</h4>
                 <p class="mt-4 mb-5 text-secondary">
@@ -429,7 +472,7 @@
           Loved by businesses, and individuals across the globe
         </h4>
         <div class="row justify-content-around">
-          <div class="col-12 col-md-6 col-lg-4 mt-2 m-lg-0">
+          <div class="col-12 col-md-6 col-lg-4 mt-2 m-lg-0 wow animate__fadeIn">
             <div class="">
               <div class="card">
                 <div class="card-body">
@@ -452,7 +495,9 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 mt-2 m-lg-0">
+          <div
+            class="col-12 col-md-6 col-lg-4 mt-2 m-lg-0 wow animate__fadeIn animate__fast"
+          >
             <div class="">
               <div class="card">
                 <div class="card-body">
@@ -475,7 +520,9 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 mt-2 m-lg-0">
+          <div
+            class="col-12 col-md-6 col-lg-4 mt-2 m-lg-0 wow animate__fadeIn animate__faster"
+          >
             <div class="">
               <div class="card">
                 <div class="card-body">
@@ -500,13 +547,32 @@
           </div>
         </div>
 
-        <div class="d-flex bio-brands justify-content-around mt-0 mt-lg-5 pt-5">
-          <img src="./image/logo/buzz-log.svg" alt="" />
-          <img src="./image/logo/chase-logo.svg" alt="" />
-          <img src="./image/logo/microsoft-logo.svg" alt="" />
-          <img src="./image/logo/gucci-logo.svg" alt="" />
-          <img src="./image/logo/airbnb-logo.svg" alt="" />
-          <img src="./image/logo/uber.svg" alt="" />
+        <div
+          class="d-flex bio-brands justify-content-md-around align-items-center mt-0 mt-lg-5 pt-5 wow animate__fadeInUp animate__slower"
+        >
+          <a href="https://www.chase.com/" target="_blank"
+            ><img src="./image/logo/chase-logo.svg" alt="The chase logo"
+          /></a>
+
+          <a href="https://www.microsoft.com/en-us/?ql=3" target="_blank">
+            <img src="./image/logo/microsoft-logo.svg" alt="Microsoft logo"
+          /></a>
+
+          <a href="https://www.gucci.com/" target="_blank"
+            ><img src="./image/logo/gucci-logo.svg" alt="Gucci logo"
+          /></a>
+
+          <a href="https://www.uber.com/" target="_blank"
+            ><img src="./image/logo/uber.svg" alt="Uber logo" />
+          </a>
+
+          <a href="https://www.airbnb.com/" target="_blank"
+            ><img src="./image/logo/airbnb-logo.svg" alt="Airbnb logo"
+          /></a>
+
+          <a href="www.google.com" target="_blank"
+            ><img src="./image/logo/buzz-log.svg" alt="The buzz logo"
+          /></a>
 
           <div class="w-25 text-center mt-3 mt-lg-0">
             <p class="">
@@ -554,7 +620,10 @@
 
     <script src="./js/jquery.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./vendor/wow/wow.js"></script>
     <script src="./vendor/way_point/jquery.waypoints.js"></script>
+    <script src="./vendor/type_js/lib/typed.js"></script>
+
     <script src="./js/app.js"></script>
   </body>
 </html>
